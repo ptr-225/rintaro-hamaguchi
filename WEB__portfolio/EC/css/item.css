@@ -151,3 +151,68 @@ hr {
   border: none;
   background: coral ;
 }
+
+/* 以下スマホ用css */
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    padding: 1em 0;
+  }
+
+  .header__logo--wrapper{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  .header__logo--wrapper:hover {
+    color: darkgray;
+  }
+
+  .header__nav {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .header__nav a:hover {
+    color: darkgray;
+  }
+
+  .header__list {
+    padding: 0.5rem 1rem 0;
+  }
+
+  .footer {
+    height: 1em;
+    width: 95%;
+    padding: 1rem 0;
+    margin: 0 2.5%;
+    display: flex;
+    justify-content: center;
+    position: absolute; /*←絶対位置*/
+    bottom: 0; /*下に固定*/
+  }
+
+  .footer__contact {
+    color: black;
+    text-decoration: none;
+    height: 1em;
+  }
+
+  .footer__contact:hover {
+    color: darkgray;
+  }
+}
