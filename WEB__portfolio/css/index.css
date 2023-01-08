@@ -48,7 +48,6 @@ body {
   color: darkgray;
 }
 
-
 .footer {
   height: 1em;
   width: 95%;
@@ -70,7 +69,6 @@ body {
   color: darkgray;
 }
 
-
 /*ここまで共通*/
 
 .main__visual--wrapper {
@@ -87,4 +85,97 @@ body {
 .main__visual {
   width: 95%;
   height: 100%;
+  display: block !important;
+}
+.main__visual--mobile {
+  width: 95%;
+  height: 100%;
+  display: none !important;
+}
+
+/* 以下スマホ用css */
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    padding: 1em 0;
+  }
+
+  .header__logo--wrapper a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  .header__logo--wrapper a:hover {
+    color: darkgray;
+  }
+
+  .header__nav {
+    width: 20%;
+    list-style: none;
+    float: right;
+    display: block;
+    position: fixed;
+    top: 40%;
+    right: 1rem;
+  }
+
+  .header__nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .header__nav a:hover {
+    color: darkgray;
+  }
+
+  .header__list {
+    text-align: right;
+    padding-bottom: 2rem;
+  }
+
+  .main__visual--wrapper {
+    display: flex;
+    justify-content: left;
+    transition: 2s;
+    position: fixed;
+    left: 0;
+    height: 80%;
+  }
+  .main__visual--wrapper:hover {
+    opacity: 0.5;
+    transition: 2s;
+  }
+
+  .main__visual {
+    display: none !important;
+  }
+  .main__visual--mobile {
+    width: 100%;
+    display: block !important;
+  }
+
+  .footer {
+    height: 1em;
+    width: 95%;
+    padding: 1rem 0;
+    margin: 0 2.5%;
+    display: flex;
+    justify-content: center;
+    position: absolute; /*←絶対位置*/
+    bottom: 0; /*下に固定*/
+  }
+
+  .footer__contact {
+    color: black;
+    text-decoration: none;
+    height: 1em;
+  }
+
+  .footer__contact:hover {
+    color: darkgray;
+  }
 }
