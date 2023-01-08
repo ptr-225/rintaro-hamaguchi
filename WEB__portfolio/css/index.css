@@ -121,6 +121,7 @@ body {
     position: fixed;
     top: 40%;
     right: 1rem;
+    z-index: 2;
   }
 
   .header__nav a {
@@ -144,6 +145,7 @@ body {
     position: fixed;
     left: 0;
     height: 80%;
+    z-index: 1;
   }
   .main__visual--wrapper:hover {
     opacity: 0.5;
