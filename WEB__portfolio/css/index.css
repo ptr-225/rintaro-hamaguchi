@@ -102,14 +102,14 @@ body {
     padding: 1em 0;
   }
 
-  .header__logo--wrapper a {
+  .header__logo--wrapper{
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: black;
   }
 
-  .header__logo--wrapper a:hover {
+  .header__logo--wrapper:hover {
     color: darkgray;
   }
 
