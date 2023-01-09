@@ -48,7 +48,6 @@ body {
   color: darkgray;
 }
 
-
 .footer {
   height: 1em;
   width: 95%;
@@ -70,11 +69,9 @@ body {
   color: darkgray;
 }
 
-
 /*ここまで共通*/
 
-
-.banner{
+.banner {
   width: 100%;
   height: 4rem;
   margin: 0.5rem auto 2rem;
@@ -84,11 +81,11 @@ body {
   overflow: hidden;
 }
 
-.banner__content{
+.banner__content {
   width: 100%;
 }
 
-.banner__title{
+.banner__title {
   display: inline-block;
   width: 100%;
   color: #fff;
@@ -113,50 +110,62 @@ body {
   }
 }
 
-.main{
+.main {
   width: 95%;
-  height: 20rem;
   padding: 0 auto;
-  margin:  3rem auto 0;
+  margin: 3rem auto 0;
 }
 
-
-.layout{
+.layout {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.item__layout{
+.item__layout {
   width: 25%;
+  height: auto;
 }
 
-
-.item__image{
+.item__image {
   width: 100%;
+  height: auto;
 }
 
-.item__image:hover{
+.item__image:hover {
   opacity: 0.8;
   transition: 0.5s;
 }
 
-.item__name{
+.item__name {
   text-align: center;
 }
 
-.item{
+.item {
   color: black;
   text-decoration: none;
 }
 
-.item:hover{
+.item:hover {
   color: darkgrey;
 }
 
-
 /* 以下スマホ用css */
 @media (max-width: 768px) {
+
+  html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   .header {
     width: 100%;
     display: block;
@@ -164,7 +173,7 @@ body {
     padding: 1em 0;
   }
 
-  .header__logo--wrapper{
+  .header__logo--wrapper {
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -198,6 +207,34 @@ body {
     padding: 0.5rem 1rem 0;
   }
 
+  .banner {
+    height: 3rem;
+    margin: 2rem auto 2rem;
+  }
+
+  .banner__title{
+    line-height: 1rem;
+  }
+
+  .main{
+    height: 100%;
+  }
+
+  .layout {
+    width: 100%;
+    display: block;
+    justify-content: center;
+  }
+
+  .item__layout {
+    width: 100%;
+    height: auto;
+  }
+
+  .item__image{
+    height: auto;
+  }
+
   .footer {
     height: 1em;
     width: 95%;
@@ -205,8 +242,8 @@ body {
     margin: 0 2.5%;
     display: flex;
     justify-content: center;
-    position: absolute; /*←絶対位置*/
-    bottom: 0; /*下に固定*/
+    position: none; /*←絶対位置*/
+    bottom: -80rem; /*下に固定*/
   }
 
   .footer__contact {

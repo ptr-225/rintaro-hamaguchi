@@ -140,6 +140,23 @@ body {
     padding: 0.5rem 1rem 0;
   }
 
+  .main{
+    width: 90%;
+  }
+
+  .submitted{
+    margin-top: 8rem;
+    font-size: 1.5rem;
+  }
+
+  .message{
+    margin-bottom: 3rem;
+  }
+
+  .message span{
+    display: block;
+  }
+
   .footer {
     height: 1em;
     width: 95%;
