@@ -524,14 +524,29 @@ img {
     margin-bottom: 20px;
   }
 
+  /*--------------------------------
+ ページトップ
+---------------------------------*/
+
+.page-top_img{
+  width: 10%;
+  margin-bottom: 0px;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #fff;
+}
+
   /* フッター */
-  .footer {
+  .footer{
     padding: 20px;
   }
 
   /* 下層ページ */
   .article {
-    padding: 50px 0;
+    padding: 50px 0px 0px 0px;
+    margin-bottom: 0px;
   }
 
   .article-body h3 {
@@ -546,6 +561,6 @@ img {
   .article-body p {
     font-size: 14px;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
