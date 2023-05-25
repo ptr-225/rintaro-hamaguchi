@@ -424,7 +424,7 @@ img {
   }
 
   .header-logo {
-    font-size: 2px;
+    font-size: 7px;
     margin-right: 10px;
   }
 
@@ -433,7 +433,7 @@ img {
   }
 
   .gnav-item a {
-    font-size:1px;
+    font-size:5px;
   }
 
   .gnav-item a:after {
@@ -530,7 +530,7 @@ img {
 
 .page-top_img{
   width: 10%;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 
 .page-top .material-icons-outlined {
