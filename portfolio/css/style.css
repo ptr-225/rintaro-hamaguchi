@@ -424,8 +424,8 @@ img {
   }
 
   .header-logo {
-    font-size: 15px;
-    margin-right: 15px;
+    font-size: 2px;
+    margin-right: 10px;
   }
 
   .gnav-item:not(:last-child) {
@@ -433,7 +433,7 @@ img {
   }
 
   .gnav-item a {
-    font-size: 10px;
+    font-size:1px;
   }
 
   .gnav-item a:after {
