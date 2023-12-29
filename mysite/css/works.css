@@ -1,0 +1,119 @@
+/* works（FMT） */
+/* 
+.works1_date::before {color: #a9a9a9;font-size: 1.2rem;
+    content: "2023/12/29";
+}
+.works1_date_index::before {color: #a9a9a9;font-size: 1;
+    content: "2023/12/29";
+}
+.works0000::before {content: 
+    "sailin'"
+    ;}
+.works0000_concept::before {content: 
+    "香水ブランドである「SAILIN'」では、「香りの体験と、アート、デザインという視覚体験を通じた世界旅行」をコンセプトに設定しました。"
+    ;}
+.works0000_product::before {content: 
+    "四種類の香水の商品展開を設定しました。"
+    ;}
+.works0000_image1 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/)
+    ;}
+.works0000_image2 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/)
+    ;} 
+.works0000_image3 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/)
+    ;} 
+.works0000_image4 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/)
+    ;} 
+
+    */
+
+
+
+/* works1 */
+.works1_date::before {color: #a9a9a9;font-size: 1.2rem;
+    content: "2023/12/29";
+}
+
+.works1_date_index::before {color: #a9a9a9;font-size: 1;
+    content: "2023/12/29";
+}
+
+.works1::before {
+    content: "SAILIN'";
+}
+
+.works1_concept::before {
+    content: "香水ブランドである「SAILIN'」では、「香りの体験と、アート、デザインという視覚体験を通じた世界旅行」をコンセプトに設定しました。";
+}
+
+.works1_product::before {
+    content: "四種類の香水の商品展開を設定しました。";
+}
+
+/* works2 */
+
+
+.works2_date::before {color: #a9a9a9;font-size: 1.2rem;
+    content: "2023/12/29";
+}
+
+.works2_date_index::before {color: #a9a9a9;font-size: 1;
+    content: "2023/12/29";
+}
+.works2::before {content: 
+    "SHITEN"
+    ;}
+.works2_concept::before {content: 
+    "四天は、日本特有の「四季」をブランドコンセプトに日本のお酒を取り扱う酒屋です。"
+    ;}
+.works2_product::before {content: 
+    "梅酒、清酒、芋焼酎、麦焼酎。"
+    ;}
+.works2_image1 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/works2_1.jpg)
+    ;}
+.works2_image2 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/works2_2.jpg)
+    ;} 
+.works2_image3 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/works2_3.jpg)
+    ;} 
+.works2_image4 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/works2_4.jpg)
+    ;} 
+
+
+/* works（3） */
+
+.works3_date::before {color: #a9a9a9;font-size: 1.2rem;
+    content: "2023/12/29";
+}
+.works3_date_index::before {color: #a9a9a9;font-size: 1;
+    content: "2023/12/29";
+}
+.works3::before {content: 
+    "RIN RIN"
+    ;}
+.works3_concept::before {content: 
+    "明治時代から東京丸の内に本店を構える大福を取り扱う和菓子屋を設定しました。"
+    ;}
+.works3_product::before {content: 
+    "大福。"
+    ;}
+.works3_image1 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/works3_1.jpg)
+    ;}
+.works3_image2 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/works3_2.jpg)
+    ;} 
+.works3_image3 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/works3_3.jpg)
+    ;} 
+.works3_image4 {width: 24%;height: calc(76vw / 4);background-repeat: no-repeat;background-size: cover;background-position: center center;background-image: 
+    url(../images/works3_4.jpg)
+    ;} 
+
+   

@@ -1,0 +1,172 @@
+/* gnav */
+.gnav-ul {
+    display: flex;
+}
+
+.gnav-li {
+    margin-left: 2rem;
+}
+
+/* /gnav */
+
+/* works index.html */
+.works_section {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 3rem;
+}
+
+.column {
+
+    width: 100%;
+}
+
+.thumbnail_section {
+    width: 100%;
+    margin: 0% auto;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+/* /works */
+
+/* work.html */
+.wide_adjust {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.works_detail_text {
+    width: 100%;
+    margin: 2rem auto 8rem;
+}
+
+.works_detail_title {
+    width: 100%;
+    margin: 5rem auto 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.works_detail_heading {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+}
+
+.works_images_section {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1%;
+}
+
+.works_image{
+    width: 100%;
+    height: auto;
+}
+
+
+/* /work.html */
+
+
+
+/* 
+s
+p
+版
+調
+整
+*/
+
+/* 
+要素の感覚FMT
+row-gap: 2rem;
+
+margin-bottom: 1rem; 
+or 
+margin-bottom: 2rem;
+
+*/
+
+@media screen and (max-width:767px) {
+
+
+.sp{
+    display: none;
+}
+
+/* works index.html */
+.works_section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2%;
+    row-gap: 2rem;
+}
+
+.column {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.thumbnail_section {
+    width: 100%;
+    margin: 0 auto 1rem;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+/* /works */
+
+/* work.html */
+.wide_adjust {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.works_detail_text {
+    width: 100%;
+    margin: 0 ;
+}
+
+.works_detail_title {
+    width: 100%;
+    margin: 5rem auto 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.works_detail_heading {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.works_images_section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+.works_image{
+    width: 100%;
+    height: auto;
+}
+
+/* /work.html */
+
+
+/* /sp版調整 */
+
+}
