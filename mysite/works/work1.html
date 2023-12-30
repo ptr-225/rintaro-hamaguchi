@@ -89,8 +89,12 @@
         });
 
         function kakudai(e) {
-            zoomback.style.display = "flex";
-            zoom_image.setAttribute("src", e.target.getAttribute("src"));
+            if (window.matchMedia('(min-width:767px)').matches) {
+                zoomback.style.display = "flex";
+                zoom_image.setAttribute("src", e.target.getAttribute("src"));
+            } else {
+                return false
+            }
         }
         zoomback.addEventListener("click", modosu);
         function modosu() {

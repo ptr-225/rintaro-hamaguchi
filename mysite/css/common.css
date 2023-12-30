@@ -253,12 +253,12 @@ font-size:1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 #zoom_image {
     height: max(auto,90%);
     width: 90% ;
-
 }
 
 /* /#zoom */
