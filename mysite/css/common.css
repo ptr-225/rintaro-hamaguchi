@@ -1,5 +1,7 @@
 /* 
-要素の感覚FMT
+FMT
+
+色が薄いフォント：#c0c0c0;
 
 */
 
@@ -50,13 +52,14 @@ h3 {
 }
 
 h4 {
+    margin-top: 0%;
     margin-bottom: 1rem;
     font-size: 1.6rem;
     font-weight: normal;
 }
 
 p {
-    margin: 0%;
+    font-size: 0.8rem;
 }
 
 li {
@@ -72,7 +75,7 @@ figure {
     margin: 0%;
 }
 
-.display-none {
+.display_none {
     display: none;
 }
 
@@ -128,7 +131,18 @@ p
 
 /* 
 要素の感覚FMT
-見出し下：margin-bottom: 1rem;
+
+
+margin-bottom: 1rem;
+or
+
+
+通常フォントサイズ
+font-size:1rem;
+
+見出しフォントサイズ
+font-size:1.4rem;
+
 */
 
 @media screen and (max-width:767px) {
@@ -144,18 +158,23 @@ p
     h1 {}
 
     h2 {
-        margin: 2rem 0 2rem 5%;
+        margin: 2rem 0 1rem 5%;
         font-weight: normal;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .home_button {}
 
-    h3 {}
+    h3 {
+        text-align: left;
+        font-weight: normal;
+        font-size: 1.6rem;
+        margin: 2rem 0 0;
+    }
 
     h4 {
         margin-bottom: 1rem;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-weight: normal;
     }
 
@@ -181,7 +200,7 @@ p
 
     .header_logo {
         line-height: 8vh;
-        font-size: 1.4rem;
+        font-size: 1rem;
         text-align: center;
     }
 
