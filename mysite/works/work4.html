@@ -67,19 +67,19 @@
             </div>
             <section class="feature_2images_section">
                 <div>
-                    <img class="works_image" src="../images/works4_feature1.jpg" alt="">
+                    <img class="works_image zoom" src="../images/works4_feature1.jpg" alt="">
                     <p class="feature_text">英語が読めます。</p>
                 </div>
-                <div><img class="works_image" src="../images/works4_feature2.jpg" alt="">
+                <div><img class="works_image zoom" src="../images/works4_feature2.jpg" alt="">
                     <p class="feature_text">日本語が読めます。</p>
                 </div>
             </section>
             <h4>IMAGES</h4>
             <section class="works_images_section">
-                <div><img class="works_image" src="../images/works4_1.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works4_2.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works4_3.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works4_4.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works4_1.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works4_2.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works4_3.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works4_4.jpg" alt=""></div>
             </section>
         </div>
         <!-- /works -->
@@ -92,7 +92,26 @@
 
     </main>
 
+    <!-- zoom_js -->
+    <div id="zoomback"><img id="zoom_image" src=""></div>
+    <script>
+        const zoom = document.querySelectorAll(".zoom");
+        const zoomback = document.getElementById("zoomback");
+        const zoom_image = document.getElementById("zoom_image");
+        zoom.forEach(function (value) {
+            value.addEventListener("click", kakudai);
+        });
 
+        function kakudai(e) {
+            zoomback.style.display = "flex";
+            zoom_image.setAttribute("src", e.target.getAttribute("src"));
+        }
+        zoomback.addEventListener("click", modosu);
+        function modosu() {
+            zoomback.style.display = "none";
+        }
+    </script>
+    <!-- /zoom_js -->
 </body>
 
 </html>

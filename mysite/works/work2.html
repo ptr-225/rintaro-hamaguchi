@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Shippori+Mincho&display=swap" rel="stylesheet">    <link href="css/common.css" rel="stylesheet" type="text/css" /><link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link href="../css/works.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.png" />
@@ -38,7 +40,9 @@
         <!-- /header -->
 
         <!-- works -->
-        <a class="home_button sp" href="../index.html"><h2>HOME</h2></a>
+        <a class="home_button sp" href="../index.html">
+            <h2>HOME</h2>
+        </a>
 
         <div class="wide_adjust">
             <div class="works_detail_title">
@@ -59,10 +63,10 @@
             </section>
             <h4>IMAGES</h4>
             <section class="works_images_section">
-                <div><img class="works_image" src="../images/works2_1.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works2_2.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works2_3.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works2_4.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works2_1.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works2_2.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works2_3.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works2_4.jpg" alt=""></div>
             </section>
         </div>
         <!-- /works -->
@@ -75,7 +79,26 @@
 
     </main>
 
+    <!-- zoom_js -->
+    <div id="zoomback"><img id="zoom_image" src=""></div>
+    <script>
+        const zoom = document.querySelectorAll(".zoom");
+        const zoomback = document.getElementById("zoomback");
+        const zoom_image = document.getElementById("zoom_image");
+        zoom.forEach(function (value) {
+            value.addEventListener("click", kakudai);
+        });
 
+        function kakudai(e) {
+            zoomback.style.display = "flex";
+            zoom_image.setAttribute("src", e.target.getAttribute("src"));
+        }
+        zoomback.addEventListener("click", modosu);
+        function modosu() {
+            zoomback.style.display = "none";
+        }
+    </script>
+    <!-- /zoom_js -->
 </body>
 
 </html>

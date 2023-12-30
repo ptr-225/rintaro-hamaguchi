@@ -1,7 +1,7 @@
 /* 
 FMT
 
-色が薄いフォント：#c0c0c0;
+グレー指定：#c0c0c0;
 
 */
 
@@ -16,7 +16,6 @@ html {
 
 body {
     padding-top: 10vh;
-    ;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -118,6 +117,27 @@ figure {
 }
 
 /* /footer */
+
+/* #zoom */
+#zoomback {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#zoom_image {
+    max-height: 90%;
+    width: max(auto, 90%) ;
+}
+
+/* /#zoom */
 
 
 
@@ -225,11 +245,24 @@ font-size:1.4rem;
 
     /* /footer */
 
+    /* #zoom */
+#zoomback {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* /common */
-
-
-
-
+#zoom_image {
+    height: max(auto,90%);
+    width: 90% ;
 
 }
+
+/* /#zoom */
+
+}
+
+/* /common */

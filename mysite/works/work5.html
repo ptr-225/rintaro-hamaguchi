@@ -68,21 +68,21 @@
                 </div>
                 <div class="feature_3images_section_rabita">
                     <div>
-                        <img class="works_image" src="../images/works5_feature1.jpg" alt="">
+                        <img class="works_image zoom" src="../images/works5_feature1.jpg" alt="">
                     </div>
-                    <div><img class="works_image" src="../images/works5_feature2.jpg" alt="">
+                    <div><img class="works_image zoom" src="../images/works5_feature2.jpg" alt="">
                     </div>
-                    <div><img class="works_image" src="../images/works5_feature3.jpg" alt="">
+                    <div><img class="works_image zoom" src="../images/works5_feature3.jpg" alt="">
                     </div>
                 </div>
                 <p class="works5_feature2"></p>
             </section>
             <h4>IMAGES</h4>
             <section class="works_images_section">
-                <div><img class="works_image" src="../images/works5_1.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works5_2.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works5_3.jpg" alt=""></div>
-                <div><img class="works_image" src="../images/works5_4.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works5_1.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works5_2.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works5_3.jpg" alt=""></div>
+                <div><img class="works_image zoom" src="../images/works5_4.jpg" alt=""></div>
             </section>
         </div>
         <!-- /works -->
@@ -94,7 +94,26 @@
         <!-- /footer -->
 
     </main>
+    <!-- zoom_js -->
+    <div id="zoomback"><img id="zoom_image" src=""></div>
+    <script>
+        const zoom = document.querySelectorAll(".zoom");
+        const zoomback = document.getElementById("zoomback");
+        const zoom_image = document.getElementById("zoom_image");
+        zoom.forEach(function (value) {
+            value.addEventListener("click", kakudai);
+        });
 
+        function kakudai(e) {
+            zoomback.style.display = "flex";
+            zoom_image.setAttribute("src", e.target.getAttribute("src"));
+        }
+        zoomback.addEventListener("click", modosu);
+        function modosu() {
+            zoomback.style.display = "none";
+        }
+    </script>
+    <!-- /zoom_js -->
 
 </body>
 
