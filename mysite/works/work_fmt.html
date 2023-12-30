@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Shippori+Mincho&display=swap" rel="stylesheet">    <link href="css/common.css" rel="stylesheet" type="text/css" /><link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link href="../css/works.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.png" />
@@ -26,8 +28,8 @@
             <h1 class="header_logo">
                 <a href="../index.html">RINTARO HAMAGUCHI</a>
             </h1>
-            <nav class="gnav">
-                <ul class="gnav-ul sp">
+            <nav class="gnav sp">
+                <ul class="gnav-ul">
                     <li class="gnav-li"><a href="#works">WORKS</a></li>
                     <li class="gnav-li"><a href="#skill">SKILL</a></li>
                     <li class="gnav-li"><a href="#about">ABOUT</a></li>
@@ -38,27 +40,48 @@
         <!-- /header -->
 
         <!-- works -->
-        <!-- "works2"を全体選択してworksの数字を一括入れ替えすると該当の制作物ページになる -->
+        <a class="home_button sp" href="../index.html">
+            <h2>HOME</h2>
+        </a>
 
-        <a class="home_button sp" href="../index.html">home</a>
-        <h3 class="works2"></h3>
-        <section class="works_detail">
-            <div class="column">
-                <img class="thumbnail" src="../images/works2_key.jpg" alt="">
+        <div class="wide_adjust">
+            <div class="works_detail_title">
+                <h3 class="works4"></h3>
+                <p class="works4_date"></p>
             </div>
+            <div class="thumbnail_section"><img class="thumbnail" src="../images/works4_key.jpg" alt=""></div>
+            <section class="works_detail_text">
+                <div class="column">
+                    <p class="works_detail_heading">CONCEPT</p>
+                    <p class="works4_concept"></p>
+                </div>
+                <div class="column">
+                    <p class="works_detail_heading">PRODUCT</p>
+                    <p class="works4_product"></p>
+                </div>
+            </section>
+            <h4 class="display_none">feature_2images_section</h4>
             <div class="column">
-                <p class="works_detail_heading">CONCEPT</p>
-                <p class="works2_concept"></p>
-                <p class="works_detail_heading">PRODUCT</p>
-                <p class="works2_product"></p>
+                <p class="works_detail_heading">FEATURE</p>
+                <p class="works4_feature"></p>
             </div>
-        </section>
-        <section class="works_images_section">
-            <div class="works2_image1"></div>
-            <div class="works2_image2"></div>
-            <div class="works2_image3"></div>
-            <div class="works2_image4"></div>
-        </section>
+            <section class="feature_2images_section">
+                <div>
+                    <img class="works_image" src="../images/works4_feature1.jpg" alt="">
+                    <p class="feature_text">英語が読めます。</p>
+                </div>
+                <div><img class="works_image" src="../images/works4_feature2.jpg" alt="">
+                    <p class="feature_text">日本語が読めます。</p>
+                </div>
+            </section>
+            <h4>IMAGES</h4>
+            <section class="works_images_section">
+                <div><img class="works_image" src="../images/works4_1.jpg" alt=""></div>
+                <div><img class="works_image" src="../images/works4_2.jpg" alt=""></div>
+                <div><img class="works_image" src="../images/works4_3.jpg" alt=""></div>
+                <div><img class="works_image" src="../images/works4_4.jpg" alt=""></div>
+            </section>
+        </div>
         <!-- /works -->
 
         <!-- footer -->
@@ -68,6 +91,7 @@
         <!-- /footer -->
 
     </main>
+
 
 </body>
 
