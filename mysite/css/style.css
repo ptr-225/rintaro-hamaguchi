@@ -26,7 +26,7 @@
 
 .thumbnail_section {
     width: 100%;
-    margin: 0% auto;
+    margin: 0% auto 2rem;
 }
 
 .thumbnail {
@@ -43,12 +43,12 @@
 
 .works_detail_text {
     width: 100%;
-    margin: 2rem auto 8rem;
+    margin-bottom:8rem;
 }
 
 .works_detail_title {
     width: 100%;
-    margin: 5rem auto 1rem;
+    margin: 0 auto 1rem;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -56,7 +56,7 @@
 
 .works_detail_heading {
     font-size: 1.4rem;
-    margin: 2rem 0 1rem;
+    margin:2rem 0 1rem;
 }
 
 .works_images_section {
@@ -92,6 +92,8 @@ row-gap: 2rem;
 margin-bottom: 1rem; 
 or 
 margin-bottom: 2rem;
+or
+margin-bottom: 4rem;
 
 */
 
@@ -109,7 +111,7 @@ margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 2%;
-    row-gap: 2rem;
+    row-gap: 0 ;
 }
 
 .column {
@@ -136,12 +138,12 @@ margin-bottom: 2rem;
 
 .works_detail_text {
     width: 100%;
-    margin: 0 ;
+    margin-bottom:4rem;
 }
 
 .works_detail_title {
     width: 100%;
-    margin: 5rem auto 1rem;
+    margin: 0 auto 1rem;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
