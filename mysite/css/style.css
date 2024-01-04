@@ -43,6 +43,12 @@ margin-bottom: 6rem;
 
 .thumbnail {
     width: 100%;
+    transition-duration: 0.3s;
+}
+
+.thumbnail_animation:hover{
+    filter: brightness(130%);
+    transition-duration: 0.7s;
 }
 
 /* /works */

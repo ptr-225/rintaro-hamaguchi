@@ -75,7 +75,15 @@ li {
 a {
     text-decoration: none;
     color: black;
+    transition-duration: 0.5s;
 }
+
+a:hover{
+    color: #c0c0c0;
+    transition-duration: 0.5s;
+}
+
+
 
 figure {
     margin: 0%;
