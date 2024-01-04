@@ -48,7 +48,7 @@ margin-bottom: 6rem;
 
 .thumbnail_animation:hover{
     filter: brightness(130%);
-    transition-duration: 0.7s;
+    transition-duration: 0.9s;
 }
 
 /* /works */
@@ -164,6 +164,16 @@ margin-bottom: 4rem;
     .thumbnail_section {
         width: 100%;
         margin: 0 auto 1rem;
+    }
+
+    .thumbnail {
+        width: 100%;
+        transition-duration: none;
+    }
+    
+    .thumbnail_animation:hover{
+        filter: none;
+        transition-duration: none;
     }
 
     .thumbnail {

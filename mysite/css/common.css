@@ -26,6 +26,18 @@ main {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    color: #c0c0c0;
+    transition-duration: 0.5s;
+}
+
+
 h1 {
     font-weight: normal;
     margin: 0%;
@@ -39,15 +51,21 @@ h2 {
 
 .home_button {
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 2.5rem;
+}
+
+.home_button a{
     color: #c0c0c0;
 }
 
 .back_button {
     font-weight: normal;
-    font-size: 1rem;
-    color: #c0c0c0;
+    font-size: 2.5rem;
     text-align: right;
+}
+
+.back_button a{
+    color: #c0c0c0;
 }
 
 h3 {
@@ -72,16 +90,6 @@ li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    transition-duration: 0.5s;
-}
-
-a:hover{
-    color: #c0c0c0;
-    transition-duration: 0.5s;
-}
 
 
 
@@ -106,6 +114,7 @@ figure {
     align-items: center;
     padding: 0% 2.5%;
     margin-bottom: 4rem;
+    z-index: 1000;
 }
 
 .header_logo {
@@ -212,10 +221,10 @@ font-size:1.4rem;
 
     .back_button {
         font-weight: normal;
-        font-size: 1rem;
-        color: #c0c0c0;
+        font-size: 2rem;
         text-align: center;
     }
+    
 
     h3 {
         text-align: left;
