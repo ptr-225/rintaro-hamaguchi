@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-    margin: 4rem 0 4rem 5%;
+    margin: 4rem 5%;
     font-weight: normal;
     font-size: 2.5rem;
 }
@@ -41,6 +41,13 @@ h2 {
     font-weight: normal;
     font-size: 1rem;
     color: #c0c0c0;
+}
+
+.back_button {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #c0c0c0;
+    text-align: right;
 }
 
 h3 {
@@ -134,7 +141,17 @@ figure {
 
 #zoom_image {
     max-height: 90%;
-    width: max(auto, 90%) ;
+    width: max(auto, 90%);
+}
+
+.zoom_animation {
+    animation: zoom_animation 0.5s ease;
+}
+
+@keyframes zoom_animation {
+    from {
+        transform: scale(0.2);
+    }
 }
 
 /* /#zoom */
@@ -178,12 +195,19 @@ font-size:1.4rem;
     h1 {}
 
     h2 {
-        margin: 2rem 0 1rem 5%;
+        margin: 2rem 5%;
         font-weight: normal;
         font-size: 1.4rem;
     }
 
     .home_button {}
+
+    .back_button {
+        font-weight: normal;
+        font-size: 1rem;
+        color: #c0c0c0;
+        text-align: center;
+    }
 
     h3 {
         text-align: left;
@@ -197,6 +221,7 @@ font-size:1.4rem;
         font-size: 1.2rem;
         font-weight: normal;
     }
+
 
     p {}
 
@@ -228,7 +253,7 @@ font-size:1.4rem;
 
     /* footer */
     .footer {
-        height: 30vh;
+        height: 10vh;
         width: 100%;
     }
 
@@ -246,23 +271,24 @@ font-size:1.4rem;
     /* /footer */
 
     /* #zoom */
-#zoomback {
-    position: fixed;
-    top: 0;
-    right: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
+    #zoomback {
+        position: fixed;
+        top: 0;
+        right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    #zoom_image {
+        height: max(auto, 90%);
+        width: 90%;
+    }
+
+    /* /#zoom */
+
+
+
+    /* /common */
 }
-
-#zoom_image {
-    height: max(auto,90%);
-    width: 90% ;
-}
-
-/* /#zoom */
-
-}
-
-/* /common */

@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Shippori+Mincho&display=swap" rel="stylesheet">    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/works.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.png" />
@@ -42,27 +43,27 @@
         <!-- works -->
         <h2>WORKS</h2>
         <section class="works_section">
-            <div class="column">
+            <div class="column" id="works1">
                 <a href="works/work1.html"><img class="thumbnail" src="images/works1_key.jpg" alt=""></a>
                 <p class="works1"></p>
                 <p class="works1_date_index"></p>
             </div>
-            <div class="column">
+            <div class="column" id="works2">
                 <a href="works/work2.html"><img class="thumbnail" src="images/works2_key.jpg" alt=""></a>
                 <p class="works2"></p>
                 <p class="works2_date_index"></p>
             </div>
-            <div class="column">
+            <div class="column" id="works3">
                 <a href="works/work3.html"><img class="thumbnail" src="images/works3_key.jpg" alt=""></a>
                 <p class="works3"></p>
                 <p class="works3_date_index"></p>
             </div>
-            <div class="column">
+            <div class="column" id="works4">
                 <a href="works/work4.html"><img class="thumbnail" src="images/works4_key.jpg" alt=""></a>
                 <p class="works4"></p>
                 <p class="works4_date_index"></p>
             </div>
-            <div class="column">
+            <div class="column" id="works5">
                 <a href="works/work5.html"><img class="thumbnail" src="images/works5_key.jpg" alt=""></a>
                 <p class="works5"></p>
                 <p class="works5_date_index"></p>
@@ -76,7 +77,30 @@
         <p class="copyright">© Rintaro Hamaguchi</p>
         <!-- /footer -->
     </main>
-    
+    <!-- サイト内リンク jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var headerHeight = $('header').outerHeight(true); // ヘッダーについているID、クラス名など、余白を開けたい場合は + 10を追記する。
+            var urlHash = location.hash; // ハッシュ値があればページ内スクロール
+            if (urlHash) { // 外部リンクからのクリック時
+                $('body,html').scrollTop(); // スクロールを0に戻す
+                setTimeout(function () { // ロード時の処理を待ち、時間差でスクロール実行
+                    var target = $(urlHash);
+                    var position = target.offset().top - headerHeight;
+                    $('body,html').stop().animate({ scrollTop: position }, 1500); // スクロール速度ミリ秒
+                }, 0);
+            }
+            $('a[href^="#"]').click(function () { // 通常のクリック時
+                var href = $(this).attr("href"); // ページ内リンク先を取得
+                var target = $(href);
+                var position = target.offset().top - headerHeight;
+                $('body,html').stop().animate({ scrollTop: position }, 0); // スクロール速度ミリ秒
+                return false; // #付与なし、付与したい場合は、true
+            });
+        });
+    </script>
+    <!-- /サイト内リンク jQuery -->
 </body>
 
 </html>

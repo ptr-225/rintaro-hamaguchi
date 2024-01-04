@@ -69,6 +69,10 @@
                 <div><img class="works_image zoom" src="../images/works1_4.jpg" alt=""></div>
             </section>
         </div>
+
+        <a class="back_button" href="../index.html#works1">
+            <h2>BACK</h2>
+        </a>
         <!-- /works -->
 
         <!-- footer -->
@@ -87,11 +91,11 @@
         zoom.forEach(function (value) {
             value.addEventListener("click", kakudai);
         });
-
         function kakudai(e) {
             if (window.matchMedia('(min-width:767px)').matches) {
                 zoomback.style.display = "flex";
                 zoom_image.setAttribute("src", e.target.getAttribute("src"));
+                zoom_image.classList.add("zoom_animation")
             } else {
                 return false
             }
@@ -99,6 +103,7 @@
         zoomback.addEventListener("click", modosu);
         function modosu() {
             zoomback.style.display = "none";
+            zoom_image.classList.remove("zoom_animation")
         }
     </script>
     <!-- /zoom_js -->
