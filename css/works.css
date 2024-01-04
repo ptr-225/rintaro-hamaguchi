@@ -1,0 +1,201 @@
+/* works（FMT） */
+/* 
+.works1_date::before {color: #a9a9a9;font-size: 1.2rem;
+    content: "2023/12/29";
+}
+.works1_date_index::before {color: #a9a9a9;font-size: 1;
+    content: "2023/12/29";
+}
+.works0::before {content: 
+    "sailin'";
+}
+.works0_concept::before {content: 
+    "香水ブランドである「SAILIN'」では、「香りの体験と、アート、デザインという視覚体験を通じた世界旅行」をコンセプトに設定しました。";
+}
+.works0_product::before {content: 
+    "四種類の香水の商品展開を設定しました。";
+}
+.works0_feature::before {content: 
+    "四種類の香水の商品展開を設定しました。";
+}
+    */
+
+
+
+/* works1 */
+.works1_date::before {
+    color: #a9a9a9;
+    font-size: 1.2rem;
+    content: "2023/12/29";
+}
+
+.works1_date_index::before {
+    color: #a9a9a9;
+    font-size: 1;
+    content: "2023/12/29";
+}
+
+.works1::before {
+    content: "SAILIN'";
+}
+
+.works1_concept::before {
+    content: "香水ブランドである「SAILIN'」では、「香りの体験と、アート、デザインという視覚体験を通じた世界旅行」をコンセプトに設定しました。";
+}
+
+.works1_product::before {
+    content: "四種類の香水の商品展開を設定しました。";
+}
+
+/* works2 */
+
+
+.works2_date::before {
+    color: #a9a9a9;
+    font-size: 1.2rem;
+    content: "2023/12/29";
+}
+
+.works2_date_index::before {
+    color: #a9a9a9;
+    font-size: 1;
+    content: "2023/12/29";
+}
+
+.works2::before {
+    content:
+        "SHITEN"
+    ;
+}
+
+.works2_concept::before {
+    content:
+        "四天は、日本特有の「四季」をブランドコンセプトに日本のお酒を取り扱う酒屋です。"
+    ;
+}
+
+.works2_product::before {
+    content:
+        "梅酒、清酒、芋焼酎、麦焼酎。"
+    ;
+}
+
+/* works（3） */
+
+.works3_date::before {
+    color: #a9a9a9;
+    font-size: 1.2rem;
+    content: "2023/12/29";
+}
+
+.works3_date_index::before {
+    color: #a9a9a9;
+    font-size: 1;
+    content: "2023/12/29";
+}
+
+.works3::before {
+    content:
+        "RIN RIN"
+    ;
+}
+
+.works3_concept::before {
+    content:
+        "明治時代から東京丸の内に本店を構える大福を取り扱う和菓子屋を設定しました。"
+    ;
+}
+
+.works3_product::before {
+    content:
+        "大福。"
+    ;
+}
+
+/* works（4） */
+
+.works4_date::before {
+    color: #a9a9a9;
+    font-size: 1.2rem;
+    content: "2023/12/29";
+}
+
+.works4_date_index::before {
+    color: #a9a9a9;
+    font-size: 1;
+    content: "2023/12/29";
+}
+
+.works4::before {
+    content:
+        "BLESSING"
+    ;
+}
+
+.works4_concept::before {
+    content:
+        "BLESSINGは、日本製の香水ブランドです。空、洋、地をテーマに掲げています。"
+    ;
+}
+
+.works4_product::before {
+    content:
+        "3種類の香水の商品展開を設定しました。"
+    ;
+}
+
+.works4_feature::before {
+    content:
+        "箱、ボトル双方のパッケージデザインにおいて、横向きにおくと「英語」が、縦向きにおくと「日本語」が読めるように設計しました。"
+    ;
+}
+
+/* works（5） */
+
+.works5_date::before {
+    color: #a9a9a9;
+    font-size: 1.2rem;
+    content: "2023/12/29";
+}
+
+.works5_date_index::before {
+    color: #a9a9a9;
+    font-size: 1;
+    content: "2023/12/29";
+}
+
+.works5::before {
+    content:
+        "RABITA"
+    ;
+}
+
+.works5_concept::before {
+    content:
+        "コーヒー豆の名産地であるイエメンのコーヒー豆とデザイン、アートの文化を取り入れたコーヒーブランドです。ブランドネームの「 رابطة 」は英語で「RABITA（ラービタ）」と読み、絆、結びつけるものという意味合いを持ちます。コンセプトを設計する際に、東京を中心に販売エリアを想定して、原産国であるイエメンとの関係性をブランドネームに反映することを考えました。";
+}
+
+.works5_product::before {
+    content:
+        "「ORANGE（オレンジ）」「URBAN（アーバン）」「OCEAN（オーシャン）」の３種を展開するボトルコーヒー。"
+    ;
+}
+
+.works5_feature::before {
+    content:
+        "左から「ORANGE（オレンジ）」「URBAN（アーバン）」「OCEAN（オーシャン）」。";
+}
+
+.works5_feature2::before {
+    content:
+        "イエメンの位置するアラビア半島を中心に栄える「アラベスク模様」を連想する様な、左右・上下対称に広がるデザインを目指しました。「ORANGE（オレンジ）」は、オレンジをカットした時の断面をデザインのモチーフにしています。「URBAN（アーバン）」は入り組んだ街区、「OCEAN（オーシャン）」は波の広がる海洋の中心をモチーフにデザインしました。";
+    white-space: pre-wrap;
+}
+
+.feature_3images_section_rabita {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+    margin-bottom: 2rem;
+}
