@@ -1,12 +1,21 @@
 /* 
-要素の感覚FMT
+FMT
+
+---PC---
+
+font-size: 1.2rem;
+
 row-gap: ;
 
+margin-bottom: 0.2rem;
+or
 margin-bottom: 1rem; 
 or 
 margin-bottom: 2rem;
 or
 margin-bottom: 6rem;
+
+---sp---
 
 */
 
@@ -31,6 +40,11 @@ margin-bottom: 6rem;
     row-gap: 3rem;
 }
 
+.works_title{
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
 .column {
     width: 100%;
     margin-bottom: 2rem;
@@ -38,7 +52,7 @@ margin-bottom: 6rem;
 
 .thumbnail_section {
     width: 100%;
-    margin: 0% auto 2rem;
+    margin: 0% auto 0.5rem ;
 }
 
 .thumbnail {
@@ -66,7 +80,7 @@ margin-bottom: 6rem;
 
 .works_detail_title {
     width: 100%;
-    margin: 0 auto 1rem;
+    margin: 0 auto 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -74,7 +88,7 @@ margin-bottom: 6rem;
 
 .works_detail_heading {
     font-size: 1.4rem;
-    margin-bottom:1rem;
+    margin-bottom:0.5rem;
 }
 
 .feature_section{
@@ -163,7 +177,7 @@ margin-bottom: 4rem;
 
     .thumbnail_section {
         width: 100%;
-        margin: 0 auto 1rem;
+        margin: 0% auto 0.5rem;
     }
 
     .thumbnail {
@@ -195,7 +209,7 @@ margin-bottom: 4rem;
 
     .works_detail_title {
         width: 100%;
-        margin: 0 auto 1rem;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -203,7 +217,6 @@ margin-bottom: 4rem;
 
     .works_detail_heading {
         font-size: 1.2rem;
-        margin: 0;
     }
 
     .feature_section{
