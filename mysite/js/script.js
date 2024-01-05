@@ -9,7 +9,7 @@ $(function () {
     e.preventDefault(); // ナビゲートをキャンセル
     url = $(this).attr("href"); // 遷移先のURLを取得
     if (url !== "") {
-      $("body").addClass("fade"); // bodyに class="fadeout"を挿入
+      $("body").addClass("fadeout"); // bodyに class="fadeout"を挿入
       setTimeout(function () {
         window.location = url; // 0.2秒後に取得したURLに遷移
       }, 200);
