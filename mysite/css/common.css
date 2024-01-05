@@ -1,7 +1,11 @@
 /* 
 FMT
 
-グレー指定：#c0c0c0;
+グレー指定:#c0c0c0;
+z-index: 
+header 1000
+#zoom 2000
+fade 3000
 
 */
 
@@ -142,6 +146,33 @@ figure {
 
 /* /footer */
 
+/* fade調整 */
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* 背景カラー */
+    z-index: 3000;
+    /* 一番手前に */
+    pointer-events: none;
+    /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+    opacity: 0;
+    /* 初期値では非表示 */
+    -webkit-transition: opacity .8s ease;
+    /* アニメーション時間は 0.8秒 */
+    transition: opacity .8s ease;
+}
+
+body.fade::after {
+    opacity: 1;
+}
+/* fade調整 */
+
 /* #zoom */
 #zoomback {
     position: fixed;
@@ -153,6 +184,7 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2000;
     display: none;
 }
 
@@ -221,7 +253,7 @@ font-size:1.4rem;
 
     .back_button {
         font-weight: normal;
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     
