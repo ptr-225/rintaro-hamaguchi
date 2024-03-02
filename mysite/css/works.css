@@ -1,21 +1,21 @@
 /* works（FMT） */
 /* 
-.works1_date::before {color: #a9a9a9;font-size: 1.2rem;
-    content: "2023/12/29";
+.works0_date::before {color: #a9a9a9;font-size: 1.2rem;
+    white-space: pre-wrap;content: "2023/12/29";
 }
-.works1_date_index::before {color: #a9a9a9;font-size: 1;
-    content: "2023/12/29";
+.works0_date_index::before {color: #a9a9a9;font-size: 1;
+    white-space: pre-wrap;content: "2023/12/29";
 }
-.works0::before {content: 
+.works0::before {white-space: pre-wrap;content: 
     "sailin'";
 }
-.works0_concept::before {content: 
+.works0_concept::before {white-space: pre-wrap;content: 
     "香水ブランドである「SAILIN'」では、「香りの体験と、アート、デザインという視覚体験を通じた世界旅行」をコンセプトに設定しました。";
 }
-.works0_product::before {content: 
+.works0_product::before {white-space: pre-wrap;content: 
     "四種類の香水の商品展開を設定しました。";
 }
-.works0_feature::before {content: 
+.works0_feature::before {white-space: pre-wrap;content: 
     "四種類の香水の商品展開を設定しました。";
 }
     */
@@ -26,25 +26,33 @@
 .works1_date::before {
     color: #a9a9a9;
     font-size: 1.2rem;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/07/31";
 }
 
 .works1_date_index::before {
     color: #a9a9a9;
     font-size: 1;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/07/31";
 }
 
 .works1::before {
-    content: "SAILIN'";
+    white-space: pre-wrap;content: "SAILIN'";
 }
 
 .works1_concept::before {
-    content: "香水ブランドである「SAILIN'」では、「香りの体験と、アート、デザインという視覚体験を通じた世界旅行」をコンセプトに設定しました。";
+    white-space: pre-wrap;content: "香水ブランドである「SAILIN'」では、「香りの体験と、アート、デザインという視覚体験を通じた世界旅行」をコンセプトに設定しました。";
+}
+
+.works1_product{
+    margin-bottom: 1rem;
 }
 
 .works1_product::before {
-    content: "四種類の香水の商品展開を設定しました。";
+    white-space: pre-wrap;content: "四種類の香水の商品展開を設定しました。";
+}
+
+.works1_feature::before {white-space: pre-wrap;content: 
+    "4つの世界の文化圏を着想にした香りを連想させるようなイラストを制作しました。";
 }
 
 /* works2 */
@@ -53,29 +61,29 @@
 .works2_date::before {
     color: #a9a9a9;
     font-size: 1.2rem;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/07/26";
 }
 
 .works2_date_index::before {
     color: #a9a9a9;
     font-size: 1;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/07/26";
 }
 
 .works2::before {
-    content:
+    white-space: pre-wrap;content:
         "SHITEN"
     ;
 }
 
 .works2_concept::before {
-    content:
+    white-space: pre-wrap;content:
         "四天は、日本特有の「四季」をブランドコンセプトに日本のお酒を取り扱う酒屋です。"
     ;
 }
 
 .works2_product::before {
-    content:
+    white-space: pre-wrap;content:
         "梅酒、清酒、芋焼酎、麦焼酎。"
     ;
 }
@@ -85,29 +93,29 @@
 .works3_date::before {
     color: #a9a9a9;
     font-size: 1.2rem;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/05/17";
 }
 
 .works3_date_index::before {
     color: #a9a9a9;
     font-size: 1;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/05/17";
 }
 
 .works3::before {
-    content:
+    white-space: pre-wrap;content:
         "RIN RIN"
     ;
 }
 
 .works3_concept::before {
-    content:
+    white-space: pre-wrap;content:
         "明治時代から東京丸の内に本店を構える大福を取り扱う和菓子屋を設定しました。"
     ;
 }
 
 .works3_product::before {
-    content:
+    white-space: pre-wrap;content:
         "大福。"
     ;
 }
@@ -117,35 +125,35 @@
 .works4_date::before {
     color: #a9a9a9;
     font-size: 1.2rem;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/10/08";
 }
 
 .works4_date_index::before {
     color: #a9a9a9;
     font-size: 1;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/10/08";
 }
 
 .works4::before {
-    content:
+    white-space: pre-wrap;content:
         "BLESSING"
     ;
 }
 
 .works4_concept::before {
-    content:
+    white-space: pre-wrap;content:
         "BLESSINGは、日本製の香水ブランドです。空、洋、地をテーマに掲げています。"
     ;
 }
 
 .works4_product::before {
-    content:
+    white-space: pre-wrap;content:
         "3種類の香水の商品展開を設定しました。"
     ;
 }
 
 .works4_feature::before {
-    content:
+    white-space: pre-wrap;content:
         "箱、ボトル双方のパッケージデザインにおいて、横向きにおくと「英語」が、縦向きにおくと「日本語」が読めるように設計しました。"
     ;
 }
@@ -155,39 +163,39 @@
 .works5_date::before {
     color: #a9a9a9;
     font-size: 1.2rem;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/06/14";
 }
 
 .works5_date_index::before {
     color: #a9a9a9;
     font-size: 1;
-    content: "2023/12/29";
+    white-space: pre-wrap;content: "2023/06/14";
 }
 
 .works5::before {
-    content:
+    white-space: pre-wrap;content:
         "RABITA"
     ;
 }
 
 .works5_concept::before {
-    content:
+    white-space: pre-wrap;content:
         "コーヒー豆の名産地であるイエメンのコーヒー豆とデザイン、アートの文化を取り入れたコーヒーブランドです。ブランドネームの「 رابطة 」は英語で「RABITA（ラービタ）」と読み、絆、結びつけるものという意味合いを持ちます。コンセプトを設計する際に、東京を中心に販売エリアを想定して、原産国であるイエメンとの関係性をブランドネームに反映することを考えました。";
 }
 
 .works5_product::before {
-    content:
+    white-space: pre-wrap;content:
         "「ORANGE（オレンジ）」「URBAN（アーバン）」「OCEAN（オーシャン）」の３種を展開するボトルコーヒー。"
     ;
 }
 
 .works5_feature::before {
-    content:
+    white-space: pre-wrap;content:
         "左から「ORANGE（オレンジ）」「URBAN（アーバン）」「OCEAN（オーシャン）」。";
 }
 
 .works5_feature2::before {
-    content:
+    white-space: pre-wrap;content:
         "イエメンの位置するアラビア半島を中心に栄える「アラベスク模様」を連想する様な、左右・上下対称に広がるデザインを目指しました。「ORANGE（オレンジ）」は、オレンジをカットした時の断面をデザインのモチーフにしています。「URBAN（アーバン）」は入り組んだ街区、「OCEAN（オーシャン）」は波の広がる海洋の中心をモチーフにデザインしました。";
     white-space: pre-wrap;
 }
@@ -199,3 +207,51 @@
     column-gap: 3%;
     margin-bottom: 2rem;
 }
+
+/* works（6） */
+
+.works6_date::before {color: #a9a9a9;font-size: 1.2rem;
+    white-space: pre-wrap;content: "2023/11/15";
+            white-space: pre-wrap;
+}
+.works6_date_index::before {color: #a9a9a9;font-size: 1;
+    white-space: pre-wrap;content: "2023/11/15";
+            white-space: pre-wrap;
+}
+.works6::before {white-space: pre-wrap;content: 
+    "LA JOLLA";
+            white-space: pre-wrap;
+}
+.works6_concept::before {white-space: pre-wrap;content: 
+    "LA JOLLA(ラ・ホヤ)とは、 アメリカ合衆国カリフォルニア州 サンディエゴの北部に位置する美しい海岸の地域です。\Aプレミアムなポテトチップスを追求するために、ラホヤでは天然の食材のみを厳選して使用しています。合成保存料や着色料は一切不使用。";
+    white-space: pre-wrap;
+}
+.works6_product::before {white-space: pre-wrap;content: 
+    "ローストチキン味、シーソルト味の２種展開。";
+            white-space: pre-wrap;
+}
+.works6_feature::before {white-space: pre-wrap;content: 
+    "それぞれの味を連想させるようなデザインを施しました。";
+            white-space: pre-wrap;
+}
+   
+
+/* works（7） */
+
+.works7_date::before {color: #a9a9a9;font-size: 1.2rem;white-space: pre-wrap;content:
+    "2024/01/31";
+}
+.works7_date_index::before {color: #a9a9a9;font-size: 1;white-space: pre-wrap;content:
+    "2024/01/31";
+}
+.works7::before {white-space: pre-wrap;content: 
+    "RINT";
+}
+.works7_concept::before {white-space: pre-wrap;content:
+    "RINT（リント）は、洗練されたステーショナリーとチョコレートを提供するブランドです。RINT製のペンとノート、口溶けの良いチョコレートで穏やかなひとときを演出します。贈り物や自分へのご褒美に、上質な体験をお楽しみください。";
+}
+.works7_product::before {white-space: pre-wrap;content:
+    "チョコレート、ノート、ペン";
+}
+
+   

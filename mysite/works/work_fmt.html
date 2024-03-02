@@ -14,14 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Shippori+Mincho&display=swap" rel="stylesheet">
-    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
     <link href="../css/common.css" rel="stylesheet" type="text/css" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link href="../css/js_setting.css" rel="stylesheet" type="text/css" />
     <link href="../css/works.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/script.js"></script>
-    <link rel="shortcut icon" href="img/favicon.png" />
 </head>
 
 <body class="fade">
@@ -61,18 +60,18 @@
                     <p class="works4_product"></p>
                 </div>
             </section>
-            <h4 class="display_none">feature_2images_section</h4>
+            <h4 class="display_none">feature-section__2images</h4>
             <div class="column">
                 <p class="works_detail_heading">FEATURE</p>
                 <p class="works4_feature"></p>
             </div>
-            <section class="feature_2images_section">
+            <section class="feature-section__2images">
                 <div>
                     <img class="works_image zoom" src="../images/works4_feature1.jpg" alt="">
-                    <p class="feature_text">英語が読めます。</p>
+                    <p class="feature-text">英語が読めます。</p>
                 </div>
                 <div><img class="works_image zoom" src="../images/works4_feature2.jpg" alt="">
-                    <p class="feature_text">日本語が読めます。</p>
+                    <p class="feature-text">日本語が読めます。</p>
                 </div>
             </section>
             <h4>IMAGES</h4>
@@ -83,9 +82,7 @@
                 <div><img class="works_image zoom" src="../images/works4_4.jpg" alt=""></div>
             </section>
         </div>
-        <a class="back_button" href="../index.html#works4">
-            <h2>BACK</h2>
-        </a>
+        <h2 class="back_button"><a href="../index.html#works4">BACK</a></h2>
         <!-- /works -->
 
         <!-- footer -->
@@ -95,11 +92,35 @@
         <!-- /footer -->
 
         <!-- top icon -->
-        <a class="top_icon" href="#main">TOP</a>
+        <a class="top_icon" href="work4.html">TOP</a>
         <!-- /top icon -->
     </main>
 
-
+    <!-- zoom_js -->
+    <div id="zoomback"><img id="zoom_image" src=""></div>
+    <script>
+        const zoom = document.querySelectorAll(".zoom");
+        const zoomback = document.getElementById("zoomback");
+        const zoom_image = document.getElementById("zoom_image");
+        zoom.forEach(function (value) {
+            value.addEventListener("click", kakudai);
+        });
+        function kakudai(e) {
+            if (window.matchMedia('(min-width:767px)').matches) {
+                zoomback.style.display = "flex";
+                zoom_image.setAttribute("src", e.target.getAttribute("src"));
+                zoom_image.classList.add("zoom_animation")
+            } else {
+                return false
+            }
+        }
+        zoomback.addEventListener("click", modosu);
+        function modosu() {
+            zoomback.style.display = "none";
+            zoom_image.classList.remove("zoom_animation")
+        }
+    </script>
+    <!-- /zoom_js -->
 </body>
 
 </html>

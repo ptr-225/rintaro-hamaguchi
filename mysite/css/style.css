@@ -1,24 +1,3 @@
-/* 
-FMT
-
----PC---
-
-font-size: 1.2rem;
-
-row-gap: ;
-
-margin-bottom: 0.2rem;
-or
-margin-bottom: 1rem; 
-or 
-margin-bottom: 2rem;
-or
-margin-bottom: 6rem;
-
----sp---
-
-*/
-
 /* gnav */
 .gnav-ul {
     display: flex;
@@ -40,7 +19,7 @@ margin-bottom: 6rem;
     row-gap: 3rem;
 }
 
-.works_title{
+.works_title {
     font-size: 1.2rem;
     margin-bottom: 0.2rem;
 }
@@ -52,7 +31,7 @@ margin-bottom: 6rem;
 
 .thumbnail_section {
     width: 100%;
-    margin: 0% auto 0.5rem ;
+    margin: 0% auto 0.5rem;
 }
 
 .thumbnail {
@@ -60,12 +39,12 @@ margin-bottom: 6rem;
     transition-duration: 0.3s;
 }
 
-.thumbnail_animation:hover{
+.thumbnail_animation:hover {
     filter: brightness(130%);
     transition-duration: 0.9s;
 }
 
-/* /works */
+/* /works index.html */
 
 /* work.html */
 .wide_adjust {
@@ -88,14 +67,66 @@ margin-bottom: 6rem;
 
 .works_detail_heading {
     font-size: 1.4rem;
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.feature_section{
+/* product-section */
+
+.product-section__itemDescriptions {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1%;
+}
+
+.itemDescriptions__image{
+    width: 100%;
+    height: auto;
+}
+
+.description__header {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+
+.description__header2 {
+    font-size: 1rem;
+    color: #c0c0c0;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.description__text {
+    padding-right: 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* /product-section */
+
+/* feature-section */
+
+.feature_section {
     margin-bottom: 6rem;
 }
 
-.feature_2images_section {
+.feature-section__1image1text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+
+.feature-section__1image {
+    width: 80%;
+}
+
+.feature-section__1text {
+    padding: 1rem;
+    width: 17%;
+}
+
+.feature-section__2images {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,13 +138,22 @@ margin-bottom: 6rem;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3%;
+    column-gap: 5%;
     margin-bottom: 6rem;
 }
 
-.feature_text{
+.feature-text {
     text-align: right;
 }
+
+.feature-section__1text {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* /feature-section */
+
+/* images-section */
 
 .works_images_section {
     width: 100%;
@@ -128,6 +168,7 @@ margin-bottom: 6rem;
     height: auto;
 }
 
+/* images-section */
 
 /* /work.html */
 
@@ -160,6 +201,11 @@ margin-bottom: 4rem;
         display: none;
     }
 
+    .sp--hidden {
+        visibility: hidden;
+        font-size: 0;
+    }
+
     /* works index.html */
     .works_section {
         width: 90%;
@@ -184,8 +230,8 @@ margin-bottom: 4rem;
         width: 100%;
         transition-duration: none;
     }
-    
-    .thumbnail_animation:hover{
+
+    .thumbnail_animation:hover {
         filter: none;
         transition-duration: none;
     }
@@ -219,17 +265,55 @@ margin-bottom: 4rem;
         font-size: 1.2rem;
     }
 
-    .feature_section{
+    /* product-section */
+
+    .product-section__itemDescriptions {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: block;
+    }
+
+    .description__header {
+        font-size: 1.3rem;
+    }
+
+    .description__header2 {
+        font-size: 1rem;
+        color: #c0c0c0;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .description__text {
+        padding-right: 0.8rem;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    /* /product-section */
+
+    .feature_section {
         margin-bottom: 4rem;
     }
 
-    .feature_2images_section {
+    .feature-section__1image1text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .feature-section__1image1text.last {
+        margin-bottom: 4rem;
+    }
+
+    .feature-section__2images {
         grid-template-columns: 1fr;
         row-gap: 1%;
         margin-bottom: 4rem;
     }
-    
-    .feature_text{
+
+    .feature-text {
         text-align: right;
     }
 
@@ -241,8 +325,6 @@ margin-bottom: 4rem;
     }
 
     .works_image {
-        width: 100%;
-        height: auto;
     }
 
     /* /work.html */

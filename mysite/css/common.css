@@ -1,13 +1,3 @@
-/* 
-FMT
-
-グレー指定:#c0c0c0;
-z-index: 
-header 1000
-#zoom 2000
-fade 3000
-
-*/
 
 /* common */
 html {
@@ -88,6 +78,7 @@ h4 {
 
 p {
     font-size: 0.8rem;
+    line-height: 1.4rem;
     margin: 0%;
 }
 
@@ -135,14 +126,13 @@ figure {
 }
 
 .copyright {
-    width: 99%;
-    padding-right: 1%;
+    width: 100%;
     display: block;
     margin: 0%;
     bottom: 0%;
     height: 5vh;
     line-height: 5vh;
-    text-align: right;
+    text-align: center;
 }
 
 /* /footer */
@@ -156,8 +146,7 @@ figure {
     text-align: center;
     line-height: 2.5rem;
     text-decoration: underline;
-    
-    right: 3vw;
+    right: 3%;
     bottom: 8vh;
 }
 
@@ -222,32 +211,6 @@ body.fade::after {
 }
 
 /* /#zoom */
-
-
-
-/* 
-s
-p
-版
-調
-整
-*/
-
-/* 
-要素の感覚FMT
-
-
-margin-bottom: 1rem;
-or
-
-
-通常フォントサイズ
-font-size:1rem;
-
-見出しフォントサイズ
-font-size:1.4rem;
-
-*/
 
 @media screen and (max-width:767px) {
 

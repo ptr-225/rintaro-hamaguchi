@@ -1,0 +1,85 @@
+～コーディングメモ～
+
+★基本、マージントップは使わずにボトムを入れていく。
+統一することで無駄な相殺を無くしていく。
+
+★BEM記法
+セクション-名__役割
+
+<!-- 共通cssルール -->
+・グレー指定:#c0c0c0;
+・z-index:
+header 1000
+#zoom 2000
+fade 3000
+
+.last
+最後の要素を指定したいときに付属させるプロパティ
+
+.sp--hidden
+spレイアウトでコンテンツを非表示にしたいとき
+
+<!-- css regulation -->
+・PC表示
+通常：font-size: 1.2rem;
+row-gap: ;
+margin-bottom:
+0.2rem;
+1rem;
+2rem;
+6rem;
+
+・SP表示
+margin-bottom: 1rem;
+通常：font-size:1rem;
+見出し：font-size:1.4rem;
+
+<!-- work00.html -->
+
+<!-- product-section -->
+.product-section__itemDescriptions
+4枚のプロダクトと各商品説明
+
+<section class="product-section__itemDescriptions">
+      <div>
+            <img class="itemDescriptions__image zoom" src="../images/works1__product1.jpg" alt="">
+            <p class="description__header">
+                  ---</p>
+            <p class="description__header2">
+                  ---</p>
+            <p class="description__text">
+                  ---</p>
+      </div>
+</section>
+
+<!-- feature-section -->
+・見出し
+<h4 class="display_none">feature-section__2images</h4>
+<div class="column">
+      <p class="works_detail_heading">FEATURE</p>
+</div>
+
+
+.feature-section__2images
+２枚の画像セクション
+
+<section class="feature-section__2images">
+      <div>
+            <img class="works_image" src="../images/works1_feature2.jpg" alt="">
+            <p class="feature-text">●●●●</p>
+      </div>
+      <div>
+            <img class="works_image" src="../images/works1_feature2.jpg" alt="">
+            <p class="feature-text">●●●●</p>
+      </div>
+</section>
+
+.feature-section__1image1text
+1枚の画像とテキストエリアセクション
+
+<section class="feature-section__1image1text">
+      <div class="feature-section__1image">
+            <img class="works_image zoom" src="../images/--.jpg" alt="">
+      </div>
+      <p class="feature-section__1text sp--hidden">＜ーー＞<br>ーー</p>
+</section>
