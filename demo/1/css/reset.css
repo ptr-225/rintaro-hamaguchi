@@ -11,7 +11,7 @@ body,p,figure{
 
 @media screen and (max-width:767px) {
       body,p,figure{
-            font-size: 12px;
+            font-size: 15px;
       }
 }
 

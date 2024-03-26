@@ -31,6 +31,7 @@ header {
 .header__logo {
       display: flex;
       align-items: center;
+      margin-top: 1rem;
 }
 
 .header__logo a {
@@ -70,6 +71,7 @@ header {
 
       .header__logo {
             position: absolute;
+            margin-top: 0;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -104,7 +106,7 @@ header {
             transform: translateY(-50%);
             right: 4%;
             display: block;
-            z-index: 1001;
+            z-index: 9999;
       }
 
       .hamburger span {
@@ -182,6 +184,50 @@ header {
 
 /* ↑↑↑↑ slide-menu */
 
+/* ↓↓↓↓ tel-button */
+.tel-button {
+      position: fixed;
+      background-color: rgba(119, 136, 153, 1);
+      font-size: 1.2rem;
+      width: 8%;
+      height: 10rem;
+      writing-mode: vertical-rl;
+      text-align: center;
+      color: white;
+      top: 3%;
+      right: 0%;
+      border-radius: 1rem 0 0 1rem;
+      z-index: 888;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+@media screen and (max-width:767px) {
+      .tel-button {
+            position: sticky;
+            background-color: rgba(119, 136, 153, 0.8);
+            font-size: 1.2rem;
+            width: 100%;
+            height: 4rem;
+            writing-mode: horizontal-tb;
+            top: unset;
+            right: unset;
+            bottom: 0%;
+            border-radius: 0;
+            box-shadow: none;
+      }
+
+      .tel-button__number {
+            display: block;
+            font-size: 0.8rem;
+      }
+}
+
+
+/* ↑↑↑↑ tel-button */
+
 /* ↓↓↓↓ main-visual */
 
 .main-visual__section {
@@ -247,12 +293,12 @@ header {
             border-top: solid 1.5px black;
             text-align: center;
       }
-      
+
       .page-header__border2 {
             margin-top: 2px;
             width: 30%;
       }
-      
+
       .background-area {
             width: 100%;
             height: 30vh;
@@ -436,7 +482,7 @@ header {
 /* ↓↓↓↓ access */
 .access__iframe {
       display: block;
-      margin: 0 auto 2rem;
+      margin: 0 auto 4rem;
 }
 
 @media screen and (max-width:767px) {
@@ -657,6 +703,7 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 1.5rem;
+      row-gap: 1rem;
 }
 
 .policy-image {
@@ -717,6 +764,7 @@ footer {
       padding: 8rem 0;
       width: 90%;
       height: fit-content;
+      overflow: hidden;
 }
 
 .menu1, .menu2, .menu3 {
@@ -732,7 +780,7 @@ footer {
 
 .menu1 img {
       transform: rotate(2deg);
-      z-index: 888;
+      z-index: 10;
 }
 
 
@@ -744,7 +792,7 @@ footer {
 
 .menu2 img {
       transform: rotate(-2deg);
-      z-index: 777;
+      z-index: 20;
 }
 
 .menu3 {
@@ -754,6 +802,7 @@ footer {
 
 .menu3 img {
       transform: rotate(-2deg);
+      z-index: 30;
 }
 
 .menu-section img {
@@ -780,7 +829,7 @@ footer {
 
 .menu-text2 {
       height: 300%;
-      padding-top: 6rem;
+      padding-top: 3rem;
       right: 5%;
       line-height: 2rem;
       letter-spacing: 0.2rem;
@@ -837,11 +886,13 @@ footer {
       .menu-text1 {
             width: 45%;
             right: 50%;
+            z-index: 40;
       }
 
       .menu-text2 {
             padding-top: 1rem;
             line-height: 2rem;
+            z-index: 40;
       }
 
       .menu-text1 .section-title {
@@ -877,9 +928,15 @@ footer {
 /* ↑↑↑↑ menu.html */
 
 /* ↓↓↓↓ information.html */
+.access-page__iframe {
+      width: 80%;
+      display: block;
+      margin: 0 auto 4rem;
+}
+
 .information-section {
       width: 60%;
-      margin: 10rem auto;
+      margin: 10rem auto 5rem;
       text-align: left;
       border-collapse: collapse;
 }
@@ -895,6 +952,12 @@ footer {
 }
 
 @media screen and (max-width:767px) {
+      .access-page__iframe {
+            width: 90%;
+            display: block;
+            margin: 0 auto 4rem;
+      }
+
       .information-section {
             width: 90%;
             margin: 4rem auto;
