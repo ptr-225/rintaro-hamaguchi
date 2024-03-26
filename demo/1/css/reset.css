@@ -1,0 +1,37 @@
+*{
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+body,p,figure{
+      font-size: 16px;
+      margin: 0%;
+}
+
+@media screen and (max-width:767px) {
+      body,p,figure{
+            font-size: 12px;
+      }
+}
+
+h1,h2,h3{
+      margin: 0;
+}
+
+nav,ul,ol,li{
+      list-style: none;
+      padding: 0;
+      margin: 0%;
+}
+
+a{
+      text-decoration: none;
+      color: black;
+      transition: 0.4s;
+}
+
+a:hover{
+      opacity: 0.5;
+      transition: 0.4s;
+}
